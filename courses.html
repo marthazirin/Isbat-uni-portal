@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="portal.css">
+
+    <style>
+        .quick-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .quick-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1A1A2E;
+            font-weight: bold;
+        }
+
+        .quick-card:hover {
+            background: #EAF3DE;
+        }
+    </style>
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <h2>ISBAT</h2>
+
+    <p>Student Portal</p>
+
+    <hr>
+
+    <h3>Student Name</h3>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">My Courses</a>
+        <a href="fees.html">Fee Statement</a>
+    </nav>
+
+</aside>
+
+<main class="main">
+
+    <div class="welcome">
+        <h1>Welcome, Student!</h1>
+        <p>Today's Date: 17 November 2026</p>
+
+        <span style="background:#EAF3DE; color:#27500A; padding:8px 18px; border-radius:20px;">
+            Active
+        </span>
+    </div>
+
+    <section class="metrics">
+
+        <div class="metric-card">
+            <h3>GPA</h3>
+            <h1>4.2</h1>
+        </div>
+
+        <div class="metric-card">
+            <h3>Credit Hours</h3>
+            <h1>24</h1>
+        </div>
+
+        <div class="metric-card">
+            <h3>Outstanding Fee Balance</h3>
+            <h1>UGX 500,000</h1>
+        </div>
+
+    </section>
+
+    <section>
+        <h2>Quick Links</h2>
+
+        <div class="quick-links">
+
+            <a href="dashboard.html" class="quick-card">
+                Dashboard
+                <p>View your student dashboard.</p>
+            </a>
+
+            <a href="courses.html" class="quick-card">
+                My Courses
+                <p>View your registered courses.</p>
+            </a>
+
+            <a href="fees.html" class="quick-card">
+                Fee Statement
+                <p>Check your tuition fee balance.</p>
+            </a>
+
+            <a href="profile.html" class="quick-card">
+                Update Profile
+                <p>Update your personal information.</p>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Courses</title>
+    <link rel="stylesheet" href="portal.css">
+
+    <style>
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+        }
+
+        .timetable th, .timetable td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .timetable th {
+            background: #1A1A2E;
+            color: white;
+        }
+
+        .webtech {
+            background: #DDEEFF;
+        }
+
+        .cprog {
+            background: #EAF3DE;
+        }
+
+        .database {
+            background: #FFF0D9;
+        }
+
+        .network {
+            background: #F5DFF0;
+        }
+
+        .free {
+            background: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <h2>ISBAT</h2>
+    <p>Student Portal</p>
+
+    <hr>
+
+    <h3>Student Name</h3>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">My Courses</a>
+        <a href="fees.html">Fee Statement</a>
+    </nav>
+
+</aside>
+
+<main class="main">
+
+    <h1>My Courses</h1>
+    <p>Year 2 — Semester 2</p>
+
+    <h2>Enrolled Courses</h2>
+
+    <table>
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+            <th>Lecturer</th>
+            <th>Room</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>AIT210</td>
+            <td>Web Technology</td>
+            <td>4</td>
+            <td>Mr. John</td>
+            <td>Lab 1</td>
+            <td>
+                <span style="background:#E1F5EE; color:#085041; padding:5px;">
+                    Active
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>AIT220</td>
+            <td>C Programming</td>
+            <td>4</td>
+            <td>Ms. Mary</td>
+            <td>Lab 2</td>
+            <td>
+                <span style="background:#E1F5EE; color:#085041; padding:5px;">
+                    Active
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>AIT230</td>
+            <td>Database Systems</td>
+            <td>4</td>
+            <td>Mr. David</td>
+            <td>Room 4</td>
+            <td>
+                <span style="background:#FAEEDA; color:#633806; padding:5px;">
+                    Pending
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>AIT240</td>
+            <td>Computer Networks</td>
+            <td>4</td>
+            <td>Ms. Sarah</td>
+            <td>Room 5</td>
+            <td>
+                <span style="background:#E1F5EE; color:#085041; padding:5px;">
+                    Active
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>AIT250</td>
+            <td>Software Engineering</td>
+            <td>4</td>
+            <td>Mr. Peter</td>
+            <td>Room 3</td>
+            <td>
+                <span style="background:#E1F5EE; color:#085041; padding:5px;">
+                    Active
+                </span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>AIT260</td>
+            <td>Operating Systems</td>
+            <td>4</td>
+            <td>Ms. Grace</td>
+            <td>Room 6</td>
+            <td>
+                <span style="background:#FAEEDA; color:#633806; padding:5px;">
+                    Pending
+                </span>
+            </td>
+        </tr>
+
+    </table>
+
+    <h2>Weekly Timetable</h2>
+
+    <table class="timetable">
+
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <tr>
+            <td>8:00–9:00</td>
+            <td class="webtech" rowspan="2">Web Technology</td>
+            <td class="cprog" rowspan="2">C Programming</td>
+            <td class="database" rowspan="2">Database Systems</td>
+            <td class="network" rowspan="2">Computer Networks</td>
+            <td class="free">Free</td>
+        </tr>
+
+        <tr>
+            <td>9:00–10:00</td>
+            <td class="free">Free</td>
+        </tr>
+
+        <tr>
+            <td>10:00–11:00</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="webtech">Web Technology</td>
+            <td class="free">Free</td>
+            <td class="cprog">C Programming</td>
+        </tr>
+
+        <tr>
+            <td>11:00–12:00</td>
+            <td class="cprog">C Programming</td>
+            <td class="database">Database Systems</td>
+            <td class="free">Free</td>
+            <td class="network">Computer Networks</td>
+            <td class="free">Free</td>
+        </tr>
+
+        <tr>
+            <td>12:00–1:00</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+        </tr>
+
+        <tr>
+            <td>1:00–2:00</td>
+            <td class="database">Database Systems</td>
+            <td class="webtech">Web Technology</td>
+            <td class="cprog">C Programming</td>
+            <td class="free">Free</td>
+            <td class="network">Computer Networks</td>
+        </tr>
+
+        <tr>
+            <td>2:00–3:00</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="free">Free</td>
+            <td class="database">Database Systems</td>
+            <td class="free">Free</td>
+        </tr>
+
+    </table>
+
+</main>
+
+</body>
+</html>
